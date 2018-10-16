@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    /* The image used */
+    background-image: url("../img/background.jpg");
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coming-soon{
+	position: absolute;
+	width: 300px;
+	height: 320px;
+	background-color: white;
+	padding: 10px;
+	left: 200px;
+	bottom:0;
+	margin-bottom: 200px;
+}
+.nopad{
+	margin: 0px;
+	padding: 0px;
+	
+	
+	
+}
+.reverse{
+	background-color: black;
+	color: white;
+	margin-top:10px;
+	padding: 3px;
+	margin-bottom: 5px;	
+}
