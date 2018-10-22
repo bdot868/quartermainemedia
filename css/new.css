@@ -51,7 +51,7 @@ video{
   color: green;
   font-size: 5.5rem;
 }
-#about .col-md-4 {
+#about .col-md-3 {
   padding: 0;
 }
 #about .video-container {
@@ -62,7 +62,7 @@ width: 100%;
 #about .image {
 display: block;
 width: 100%;
-height: 331px;
+height: 300px;
 }
 
 #about .overlay {
@@ -107,18 +107,43 @@ text-align: center;
 #fadetb .section-title {
   color: #fff;
 }
-
+#fadetb .font-lg {
+  margin-bottom: 40px
+}
 .video-img .ang {
     height: 300px !important;
     width: 400px;
     object-fit: cover;
 }
-
+#rev_slider_2 .tp-parallax-wrap {
+  left: 17% !important;
+  color: #fff;
+}
+#digital-img .tp-parallax-wrap {
+  left: 99rem !important;
+  color: #fff;
+}
 #digital-img {
   height: 500px;
   padding-top: 0 !important;
+  margin: 3rem 0;
 }
-
+#digital-img .ytcert {
+  background: #fff;
+  border-radius: 5px;
+  width: 13rem !important;
+  height: auto !important;
+}
+#digital-img h2 {
+  font-size: 1em;
+}
+#digital-img h4 {
+  font-size: .9em !important;
+}
+#digital-img .ytc-sub {
+  font-size: 18px;
+  letter-spacing: 0;
+}
 #digital .lrg-img {
   max-width: 55%;
 }
@@ -146,7 +171,9 @@ background: -webkit-linear-gradient(left, rgba(213,43,219,1) 0%,rgba(98,14,234,1
 background: linear-gradient(to right, rgba(213,43,219,1) 0%,rgba(98,14,234,1) 50%,rgba(236,129,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d52bdb', endColorstr='#ec81ef',GradientType=1 ); /* IE6-9 */
 }
-
+#events .font-lg {
+  margin-bottom: 30px;
+}
 #events .section-title::after {
   background-color: #fff;
   width: 6em;
@@ -160,26 +187,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d52bdb', end
   margin: 0;
 }
 
-.tp-parallax-wrap {
-  left: 17% !important;
-  color: #fff;
-}
-/* #events {
-  margin-bottom: auto !important;
-} */
-/* #events::after {
-    content: "";
-    display: table;
-    margin: 1.5em auto;
-    width: 25em;
-    height: 1px;
-    background-color: #101820;
-} */
 
 hr {
   width: 85%;
   border-top: 1px solid #d0d3da;
 }
+
+.newsletter-img {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom:  30px;
+  border: 1px solid #d9dde2;
+  text-align: center;
+  background: #f7f8f9;
+}
+
+.newsletter-img p {
+  font-size: 16px;
+}
+
+#mc_embed_signup input#mce-EMAIL {
+    width: 90%;
+    text-align: center;
+    border: 1px solid #d9dde2;
+    border-radius: 5px;
+    /* margin-bottom: 10px; */
+}
+
+#mc_embed_signup input#mc-embedded-subscribe, #mc_embed_signup input#mc-embedded-subscribe:focus {
+  margin: 10px;
+  background: #000;
+  height: auto;
+}
+#mc_embed_signup input#mc-embedded-subscribe:hover, #mc_embed_signup input#mc-embedded-subscribe:focus:hover {
+  background: #700414;
+  color: #fff;
+}
+
 #team-members {
 
 }
@@ -189,11 +233,42 @@ hr {
   width: 25rem;
   margin: auto;
 }
+#team-members {
+  position: relative;
+  padding: 30px 0;
+}
+#team-members .text {
+  top: 200px;
+}
+#team-members .woods-img {
+  position: relative;
+  text-align: center;
+  padding: 30px 0;
+}
+#team-members .woods-img img {
+  max-width: 75%;
+}
+.logo-links {
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #d9dde2;
+}
+
+.logo-links img {
+  height: 100%;
+  margin: 0 20px;
+}
 
 #careers {
   background: linear-gradient( rgba(0,130,170,0.1),rgba(0, 13, 51,1)), url('../img_/professional_fsvl.jpg');
   background-size: cover;
   color: #fff;
+  background-position: center;
+  height: 50rem;
+}
+#careers .col-md-6 {
+  top: 14rem;
 }
 
 #careers .fab {
@@ -234,73 +309,14 @@ hr {
   vertical-align: top;
 }
 
-/* #careers img:hover {
-  width: 7rem;
-  height: 7rem;
-}
-#careers .fa-linkedin:hover,
-#careers .fa-instagram:hover,
-#careers .fa-youtube:hover {
-  color: #000
-} */
-
 #careers .ytcert {
   background: white;
-    height: 5rem;
+    /* height: 5rem; */
 }
 
 
 
-.newsletter-img {
-  width: 300px;
-  margin: 0 auto;
-  margin-bottom:  30px;
-  border: 1px solid #d9dde2;
-  text-align: center;
-  background: #f7f8f9;
-}
-
-.newsletter-img p {
-  font-size: 16px;
-}
-
-#mc_embed_signup input#mce-EMAIL {
-    width: 90%;
-    text-align: center;
-    border: 1px solid #d9dde2;
-    border-radius: 5px;
-    /* margin-bottom: 10px; */
-}
-
-#mc_embed_signup input#mc-embedded-subscribe, #mc_embed_signup input#mc-embedded-subscribe:focus {
-  margin: 10px;
-  background: #000;
-  height: auto;
-}
-#mc_embed_signup input#mc-embedded-subscribe:hover, #mc_embed_signup input#mc-embedded-subscribe:focus:hover {
-  background: #700414;
-  color: #fff;
-}
-.logo-links {
-    height: 100px;
-    padding: 10px;
-    text-align: center;
-    border-top: 1px solid #d9dde2;
-}
-
-.logo-links img {
-  height: 100%;
-  margin: 0 20px;
-}
-
-#careers .nmsdc {
-    margin: 8em 0;
-    width: 50%;
-    height: auto;
-}
-
-
-/* Tablet View */
+/************* Tablet View ***************/
 @media (max-width: 767px){
   #digital .col-md-2 img {
     width: 44%;
@@ -309,21 +325,6 @@ hr {
   .team-figure img {
     margin: 0 auto;
   }
-
-  /* #mc_embed_signup #lbl-label {
-    display: inherit;
-  }
-
-  #mc_embed_signup input#mce-EMAIL {
-    width: 60%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  #mc_embed_signup input#mc-embedded-subscribe, #mc_embed_signup input#mc-embedded-subscribe:focus {
-    width: 60%;
-    margin: 10px 0 !important;
-  } */
 
   #about {
     margin-bottom: 50px !important;
@@ -350,7 +351,7 @@ hr {
 
 }
 
-/* Mobile View */
+/******************** Mobile View *********************/
 @media (max-width: 500px){
   .navbar {
     background: rgba(255,255,255,1)
@@ -373,19 +374,10 @@ hr {
     background-attachment: inherit;
     height: 300px;
   }
-  /* #unlimitedVideo {
-    padding-top: 0 !important;
-    margin-bottom: 0 !important;
-  } */
-  /* #digital-img {
-    height: auto;
-    padding-top: 0 !important;
-  } */
-
-  /* #events {
-    padding: 0 !important;
-  } */
-
+  #digital-img .tp-parallax-wrap {
+    left: 27rem !important;
+    color: #fff;
+  }
   #digital .col-md-2 img {
     max-width: 85%
   }
@@ -403,8 +395,15 @@ hr {
   #mc_embed_signup input#mc-embedded-subscribe, #mc_embed_signup input#mc-embedded-subscribe:focus {
     width: 50%;
     margin: 10px 0 !important;
-}
-  /* #careers .lbl {
-    margin: 10px 0;
-  } */
+  }
+  #team-members .text {
+    position: inherit;
+    text-align: center;
+  }
+  #team-members .woods-img {
+    padding: 0;
+  }
+  #team-members .woods-img img {
+    max-width: 100%;
+  }
 }
