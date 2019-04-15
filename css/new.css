@@ -48,8 +48,11 @@ video{
   padding: 0;
 }
 #about h2 {
-  color: green;
+  color: #000;
   font-size: 5.5rem;
+}
+#about h2 .green {
+  color: green;
 }
 #about .col-md-3 {
   padding: 0;
@@ -97,6 +100,27 @@ transform: translate(-50%, -50%);
 text-align: center;
 }
 
+.media-img {
+  height: 400px;
+  background: url('../img_/drew-graham.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 20px 0 20px 0;
+}
+.media-text h2, .media-text p {
+  text-align: center;
+  color: #ffffff;
+}
+
+.media-text p {
+  line-height: 26px;
+}
+
+#our-work .brands {
+  width: 100%;
+}
+
 #fadetb {
   background: linear-gradient( rgba(0,130,170,0.3),rgba(0, 13, 51,6), rgba(0,0,0,1) );
   color: #fff;
@@ -118,15 +142,20 @@ text-align: center;
 #rev_slider_2 .tp-parallax-wrap {
   left: 17% !important;
   color: #fff;
+  text-align: center;
+}
+#rev_slider_2 .tp-parallax-wrap .comp-adv {
+  font-size: 18px;
 }
 #digital-img .tp-parallax-wrap {
   left: 99rem !important;
   color: #fff;
+  text-align: center;
 }
 #digital-img {
   height: 500px;
   padding-top: 0 !important;
-  margin: 3rem 0;
+  /* margin: 3rem 0; */
 }
 #digital-img .ytcert {
   background: #fff;
@@ -146,6 +175,12 @@ text-align: center;
 }
 #digital .lrg-img {
   max-width: 55%;
+}
+
+#rev_slider_3 h3 {
+  text-shadow: 2px 2px 3px #050201;
+  color: #fff;
+  text-align: center;
 }
 
 #unlimitedVideo, #events {
@@ -238,7 +273,15 @@ hr {
   padding: 30px 0;
 }
 #team-members .text {
+  position: absolute;
   top: 200px;
+  text-align: center;
+}
+#team-members .cert-icons {
+  margin-top: 3rem;
+}
+#team-members .nmsdc, #team-members .ytcert {
+  margin: 0 10px;
 }
 #team-members .woods-img {
   position: relative;
@@ -317,7 +360,7 @@ hr {
 
 
 /************* Tablet View ***************/
-@media (max-width: 767px){
+@media (max-width: 768px){
   #digital .col-md-2 img {
     width: 44%;
   }
@@ -330,10 +373,16 @@ hr {
     margin-bottom: 50px !important;
     padding: 0;
   }
-
+  #fadetb .artist {
+    max-width: 100%;
+  }
   #unlimitedVideo {
     padding-top: 0 !important;
     margin-bottom: 0 !important;
+  }
+  #digital-img .tp-parallax-wrap {
+    left: 51rem !important;
+    color: #fff;
   }
   #digital-img {
     height: auto;
@@ -342,6 +391,17 @@ hr {
 
   #events {
     padding: 0 !important;
+  }
+
+  #team-members .text {
+    position: initial;
+    text-align: center;
+  }
+  #team-members .woods-img {
+    padding: 0;
+  }
+  #team-members .woods-img img {
+    max-width: 100%;
   }
 
   #careers .lbl {
@@ -369,7 +429,12 @@ hr {
     margin-bottom: 50px !important;
     padding: 0;
   }
-
+  #our-work .section-header {
+    margin: 0;
+  }
+  #our-work .nmsdc {
+    margin-bottom: 20px;
+  }
   .tp-bgimg {
     background-attachment: inherit;
     height: 300px;
@@ -378,10 +443,19 @@ hr {
     left: 27rem !important;
     color: #fff;
   }
+  #digital-img h4 {
+    line-height: 1.2em !important;
+  }
   #digital .col-md-2 img {
     max-width: 85%
   }
 
+  #digital-img .ytcert {
+    background: #fff;
+    border-radius: 5px;
+    width: 8rem !important;
+    height: auto !important;
+  }
   #team {
     padding: 0px;
   }
@@ -397,7 +471,7 @@ hr {
     margin: 10px 0 !important;
   }
   #team-members .text {
-    position: inherit;
+    position: initial;
     text-align: center;
   }
   #team-members .woods-img {

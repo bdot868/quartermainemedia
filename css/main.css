@@ -582,6 +582,9 @@ figure {
   .hero {
     min-height: 100%;
   }
+  .preloader, .preloader10 {
+    display: none;
+  }
 }
 /* ==================================
    Sliders
