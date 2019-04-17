@@ -101,16 +101,24 @@ text-align: center;
 }
 
 .media-img {
-  height: 400px;
+  height: 500px;
   background: url('../img_/drew-graham.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  padding: 20px 0 20px 0;
+  padding: 40px 0 40px 0;
+}
+
+.media-img .row {
+  margin: 40px auto;
 }
 .media-text h2, .media-text p {
   text-align: center;
   color: #ffffff;
+}
+.media-text p i {
+  color: #fff;
+  font-size: 20px;
 }
 
 .media-text p {
@@ -177,10 +185,14 @@ text-align: center;
   max-width: 55%;
 }
 
-#rev_slider_3 h3 {
+#rev_slider_3 h2, #rev_slider_3 p {
   text-shadow: 2px 2px 3px #050201;
   color: #fff;
   text-align: center;
+}
+
+#rev_slider_3 p.ytc-sub {
+  line-height: 26px !important;
 }
 
 #unlimitedVideo, #events {
