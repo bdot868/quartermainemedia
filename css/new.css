@@ -156,7 +156,7 @@ text-align: center;
   font-size: 18px;
 }
 #digital-img .tp-parallax-wrap {
-  left: 99rem !important;
+  left: 90rem !important;
   color: #fff;
   text-align: center;
 }
@@ -451,6 +451,15 @@ hr {
     background-attachment: inherit;
     height: 300px;
   }
+
+  #rev_slider_2 .tp-parallax-wrap {
+    font-size: 32px;
+  }
+
+  #rev_slider_3 p.ytc-sub {
+    line-height: 16px !important;
+  }
+
   #digital-img .tp-parallax-wrap {
     left: 27rem !important;
     color: #fff;
