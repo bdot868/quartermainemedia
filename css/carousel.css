@@ -43,17 +43,97 @@
   width: 100%
 }
 
+.slide-2 {
+  scroll-behavior: smooth;
+}
+
 video {
   width: 100%
 }
 
 #carouselExampleIndicators {
   background: #000;
-  text-align: center;
   color: #fff;
-  font-family: 'Krona One', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 #carouselExampleIndicators h2 {
   font-weight: 500
+}
+
+.arrow {
+  display: none;
+}
+
+.down-arrow {
+  text-align: center;
+  color: #fff;
+}
+
+.fa-angle-double-down {
+  font-size: 50px !important;
+  align-self: flex-end;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+  background: #000;
+  padding: 5px 10px;
+  border-radius: 2px
+}
+
+.bounce-1 {
+        animation-name: bounce-1;
+        animation-timing-function: linear;
+        animation-delay: 5s
+    }
+    @keyframes bounce-1 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-75px); }
+        100% { transform: translateY(0); }
+    }
+
+
+.footer {
+  text-align: center;
+}
+
+.tagline {
+  font-size: 2.1rem;
+  line-height: 1.5
+}
+
+.sub-tagline {
+  font-size: 28px;
+  color: green
+}
+
+.footer .contacts {
+    font-size: 1.2em;
+    border-bottom: 1px solid;
+}
+
+.item {
+  display: block;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .footer .contacts {
+      font-size: 17px;
+      border-bottom: 1px solid;
+  }
+
+  .item {
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .arrow {
+    display: block;
+  }
 }

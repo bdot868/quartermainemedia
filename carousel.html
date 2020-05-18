@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/carousel.css">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
@@ -20,11 +20,38 @@
             <source src="./videos/Logo_Animation_CueTheCulture.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="carousel-item">
-          <img src="./img/logo_CueTheCulture_color_v2.png" class="d-block w-100" alt="...">
-          <h2 class="tagline">CELEBRATING AND SUPPORTING BLACK INFLUENCERS</h2>
-          <p class="sub-tagline">Launching Juneteenth 2020</p>
-          <p>Contact Editor@quartermainmedia.com for pitches and information</p>
+
+
+        <div class="carousel-item slide-2">
+          <!-- <img src="./img/logo_CueTheCulture_color_v2.png" class="d-block w-100" alt="..."> -->
+          <div class="ctc-video containe">
+            <video muted loop autoplay poster="./videos/CueTheCulture_FINAL.mp4" id="player1"  class="">
+              <source src="./videos/CueTheCulture_FINAL.mp4" type="video/mp4">
+            </video>
+            <a class="arrow" href="#tagline">
+              <div class="down-arrow">
+                <i class="fa fa-angle-double-down bounce-1"></i>
+              </div>
+            </a>
+          </div>
+          <div class="footer">
+            <div class="container">
+              <h2 id=tagline class="tagline">CELEBRATING AND SUPPORTING BLACK INFLUENCERS</h2>
+              <p class="sub-tagline">Launching Juneteenth 2020</p>
+              <div class="partners">
+                <div class="item">
+                  <p><span class="contacts">Writers / Pitches / Opinions:</span><br>
+                  Chris Gilrath <br>
+                  Editor@quartermainmedia.com</p>
+                </div>
+                <div class="item">
+                  <p><span class="contacts">Ad Sales:</span><br>
+                  Denzel James<br>
+                  Denzel@quartermainmedia.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
