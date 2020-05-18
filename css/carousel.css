@@ -99,37 +99,29 @@ video {
 }
 
 .tagline {
-  font-size: 2.1rem;
+  font-size: 1.5rem;
   line-height: 1.5
 }
 
-.sub-tagline {
-  font-size: 28px;
-  color: green
+.fyi {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem
 }
 
 .footer .contacts {
-    font-size: 1.2em;
     border-bottom: 1px solid;
 }
 
 .item {
   display: block;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 
 @media only screen and (min-width: 600px) {
-  .footer .contacts {
-      font-size: 17px;
-      border-bottom: 1px solid;
-  }
 
-  .item {
-    display: inline-block;
-    text-align: left;
-    margin: 10px;
-  }
 }
 
 @media only screen and (min-width: 767px) {
