@@ -1,3 +1,38 @@
+/* ==================================
+   Navbar
+   ================================== */
+
+.navbar.bg-dark {
+  background-color: #000 !important;
+}
+.navbar-brand>img {
+  width: 3rem;
+}
+.navbar-nav > li {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 30px 13px;
+    text-align: center;
+}
+.navbar-nav > li > a {
+  color: #ffffff !important;
+}
+.navbar-nav > li > a:hover {
+  color: rgba(255,255,255,.5) !important;
+}
+.navbar-dark .navbar-toggler {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.navbar-dark .navbar-toggler:hover {
+  background-color: rgba(255,255,255,.5);
+}
+
+
+/***************** Carousel **********************/
+.carousel {
+  display: none;
+}
 .vertical .carousel-inner {
   height: 100%;
 }
@@ -48,7 +83,11 @@
 }
 
 video {
-  width: 100%
+  width: 100%;
+}
+
+.ctc-logo {
+  margin-top: 4rem;
 }
 
 #carouselExampleIndicators {
@@ -104,13 +143,14 @@ video {
 
 .fyi {
   font-size: 1.5rem;
+  font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 3rem;
   color: red;
 }
 
 .footer .contacts {
-    border-bottom: 1px solid;
+  font-weight: bold;
 }
 
 .item {
@@ -122,11 +162,22 @@ video {
 
 
 @media only screen and (min-width: 600px) {
-
+  .carousel {
+    display: block;
+  }
+  .ctc-video {
+    margin-top: 5rem;
+  }
+  .ctc-logo {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 767px) {
   .arrow {
     display: block;
+  }
+  .navbar-nav > li {
+    padding: 0
   }
 }
