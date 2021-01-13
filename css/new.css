@@ -4,10 +4,24 @@ body {
 }
 
 .navbar {
-  background: rgba(255,255,255,0)
+  background: #000;
+}
+.navbar-brand>img {
+  width: 4rem;
+}
+.navbar-default {
+  border: none;
+}
+.navbar-nav>li>a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: #e7e7e7;
 }
 video{
   width: 100%;
+  margin-top: 45px;
 }
 
 .video-info {
@@ -101,16 +115,24 @@ text-align: center;
 }
 
 .media-img {
-  height: 400px;
+  height: 500px;
   background: url('../img_/drew-graham.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  padding: 20px 0 20px 0;
+  padding: 40px 0 40px 0;
+}
+
+.media-img .row {
+  margin: 40px auto;
 }
 .media-text h2, .media-text p {
   text-align: center;
   color: #ffffff;
+}
+.media-text p i {
+  color: #fff;
+  font-size: 20px;
 }
 
 .media-text p {
@@ -131,6 +153,9 @@ text-align: center;
 #fadetb .section-title {
   color: #fff;
 }
+#fadetb .black {
+  color: #000000;
+}
 #fadetb .font-lg {
   margin-bottom: 40px
 }
@@ -148,7 +173,7 @@ text-align: center;
   font-size: 18px;
 }
 #digital-img .tp-parallax-wrap {
-  left: 99rem !important;
+  left: 90rem !important;
   color: #fff;
   text-align: center;
 }
@@ -177,10 +202,14 @@ text-align: center;
   max-width: 55%;
 }
 
-#rev_slider_3 h3 {
+#rev_slider_3 h2, #rev_slider_3 p {
   text-shadow: 2px 2px 3px #050201;
   color: #fff;
   text-align: center;
+}
+
+#rev_slider_3 p.ytc-sub {
+  line-height: 26px !important;
 }
 
 #unlimitedVideo, #events {
@@ -303,64 +332,54 @@ hr {
   margin: 0 20px;
 }
 
-#careers {
-  background: linear-gradient( rgba(0,130,170,0.1),rgba(0, 13, 51,1)), url('../img_/professional_fsvl.jpg');
-  background-size: cover;
-  color: #fff;
-  background-position: center;
-  height: 50rem;
-}
-#careers .col-md-6 {
-  top: 14rem;
+
+#team {
+  background-color: #c42a00;
 }
 
-#careers .fab {
-  color: #fff;
-  font-size: 60px;
-  margin: 0 6px;
+#team header h2 {
+  color: #ffffff;
 }
 
-#careers .section-title::after {
-  background: #fff;
+.newsletter .social-icons .fab {
+  font-size: 3rem;
+  margin: 2px;
+}
+.newsletter .social-icons .fab:hover {
+  color: #700414;
+}
+.newsletter .social-icons {
+  padding: 15px 0;
 }
 
-#careers .container {
-  width: 100%;
+#contact {
+  background: #000000;
+  color: #ffffff;
 }
 
-#careers .lbl {
-    height: 100%;
-    margin: 20% auto;
-    padding: 50px 20px;
-    background: rgba(0,0,0,.5);
-    border-radius: 5px;
+#contact .col-md-12 {
+  text-align: center;
 }
 
-#careers .logo-img {
-  background: #fff;
+#contact .contact-info {
+  padding: 30px;
 }
 
-#careers .logo-img h4{
-  font-family: 'Tajawal', sans-serif;
-  margin-top: 0;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-#careers img {
-  width: 6rem;
-  vertical-align: top;
-}
-
-#careers .ytcert {
-  background: white;
-    /* height: 5rem; */
+#contact .contact-info a {
+  color: #c42a00;
 }
 
 
 
 /************* Tablet View ***************/
 @media (max-width: 768px){
+  .navbar-toggle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .navbar-brand>img {
+    width: 3rem;
+  }
   #digital .col-md-2 img {
     width: 44%;
   }
@@ -370,7 +389,7 @@ hr {
   }
 
   #about {
-    margin-bottom: 50px !important;
+    /* margin-bottom: 30px !important; */
     padding: 0;
   }
   #fadetb .artist {
@@ -412,9 +431,9 @@ hr {
 }
 
 /******************** Mobile View *********************/
-@media (max-width: 500px){
+@media (max-width: 600px){
   .navbar {
-    background: rgba(255,255,255,1)
+    background: #000;
   }
 
   .fullscreen-bg {
@@ -426,7 +445,8 @@ hr {
   }
 
   #about {
-    margin-bottom: 50px !important;
+    margin-top: 100px;
+    /* margin-bottom: 20px !important; */
     padding: 0;
   }
   #our-work .section-header {
@@ -439,12 +459,28 @@ hr {
     background-attachment: inherit;
     height: 300px;
   }
+
+  #rev_slider_2 .tp-parallax-wrap {
+    font-size: 32px;
+  }
+  #rev_slider_3 .tp-parallax-wrap {
+    left: 16rem !important;
+  }
+  #rev_slider_3 .tp-parallax-wrap h2 {
+    font-size: 17px !important;
+  }
+  #rev_slider_3 p.ytc-sub {
+    line-height: 16px !important;
+    font-size: 15px !important;
+  }
+
   #digital-img .tp-parallax-wrap {
-    left: 27rem !important;
+    left: 24rem !important;
     color: #fff;
   }
   #digital-img h4 {
     line-height: 1.2em !important;
+    font-size: 1em !important;
   }
   #digital .col-md-2 img {
     max-width: 85%
@@ -455,6 +491,9 @@ hr {
     border-radius: 5px;
     width: 8rem !important;
     height: auto !important;
+  }
+  .media-img {
+    height: auto;
   }
   #team {
     padding: 0px;
@@ -470,14 +509,23 @@ hr {
     width: 50%;
     margin: 10px 0 !important;
   }
+  #team-members {
+    padding-bottom: 0;
+  }
   #team-members .text {
     position: initial;
     text-align: center;
+    margin-bottom: 20px;
   }
   #team-members .woods-img {
     padding: 0;
   }
   #team-members .woods-img img {
     max-width: 100%;
+  }
+
+  #contact .contact-info {
+    padding: 15px;
+    font-size: 17px;
   }
 }
