@@ -144,14 +144,16 @@ text-align: center;
 }
 
 #fadetb {
-  background: linear-gradient( rgba(0,130,170,0.3),rgba(0, 13, 51,6), rgba(0,0,0,1) );
-  color: #fff;
+  color: #3b5d70;
+  animation: ease;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
   margin-bottom: 0 !important;
   /* text-shadow: 2px 2px 4px #000000; */
 }
 
 #fadetb .section-title {
-  color: #fff;
+  color: #000;;
 }
 #fadetb .black {
   color: #000000;
