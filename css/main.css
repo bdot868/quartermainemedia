@@ -144,7 +144,9 @@ figure {
   text-align: center;
   font-weight: bold;
   letter-spacing: 3px;
-  margin: 2em;
+  /* margin: 2em; */
+  background: rgba(0,0,0, .5);
+  padding: 10px 25px;
 }
 .section-title::before {
   content: attr(data-text);
@@ -1048,7 +1050,7 @@ figure {
   /* ==================================
    New About Section
    ================================== */
-
+/*
    @import url('https://fonts.googleapis.com/css?family=Oswald:700');
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
@@ -1096,7 +1098,7 @@ figure {
 #rotate-words div:nth-child(5) { animation-delay: 16s}
 #rotate-words div:nth-child(6) { animation-delay: 20s}
 #rotate-words div:nth-child(7) { animation-delay: 24s}
-#rotate-words div:nth-child(8) { animation-delay: 28s}
+#rotate-words div:nth-child(8) { animation-delay: 28s} */
 
 @keyframes author {
     0% { opacity: 0;  transform: translateY(100px);filter:blur(10px);transform: scaleY(2)}
