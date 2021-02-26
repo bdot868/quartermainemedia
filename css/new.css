@@ -350,6 +350,7 @@ hr {
 }
 #partners h4 {
   color: #FFFFFF;
+  line-height: inherit;
 }
 .lol-box {
   /* background: #000000; */
@@ -406,7 +407,7 @@ hr {
 }
 #team-members .text {
   position: absolute;
-  top: 50px;
+  top: 100px;
   text-align: center;
 }
 #team-members .text p {
@@ -419,7 +420,7 @@ hr {
 #team-members .cert-icons {
   margin-top: 3rem;
 }
-#team-members .nmsdc, #team-members .ytcert {
+#team-members .nmsdc, #team-members .sag {
   margin: 0 10px;
 }
 #team-members .woods-img {
@@ -585,6 +586,9 @@ hr {
   .tp-bgimg {
     background-attachment: inherit;
     height: 300px;
+  }
+  .lol-logo-img {
+    width: 100%;
   }
   .lol-copy {
     text-align: center;
